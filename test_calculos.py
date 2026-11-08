@@ -36,7 +36,7 @@ def test_con_iva(precio, esperado):
     [
         ("2026-13-01", "1.50"),  # mes 13
         ("2026-10-01", "-1.50"),  # precio negativo
-        ("2026-10-01", "gratis"),  # no es un número
+        ("2026-10-01", "otro"),  # no es un número
     ],
 )
 def test_validar_venta_rechaza_filas_malas(fecha, precio):
